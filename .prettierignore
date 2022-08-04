@@ -2,3 +2,5 @@
 
 /dist
 /coverage
+/tmp
+node_modules

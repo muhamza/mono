@@ -9,7 +9,11 @@
     "web": "nx serve web",
     "test": "nx run-many --target=test --projects=web,api",
     "all": "nx run-many --target=serve --projects=web,api",
-    "lint": "nx run-many --target=lint --all"
+    "lint": "nx run-many --target=lint --all",
+    "tsc-api": "tsc -b ./apps/api --pretty",
+    "tsc-web": "tsc -b ./apps/web --pretty",
+    "tsc": "yarn tsc-api && yarn tsc-web",
+    "prettier": "prettier --write ."
   },
   "private": true,
   "dependencies": {
