@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "noImplicitAny": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@mono/types": ["libs/types/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
